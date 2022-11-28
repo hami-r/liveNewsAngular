@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-4 m-2">
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 border-0" *ngFor="let i of data.articles">
+                    <div class="card shadow" style="min-height: 10vh">
+                        <img height="300px" src="{{i.urlToImage}}" class="card-img-top" alt="...">
+                        <p class="card-text m-2" style="min-height: 2vh">{{i.publishedAt}}</p>
+                        <p class="card-text m-2" style="min-height: 5vh">{{i.author}}</p>
+                        <div class="card-body">
+                          <h3 class="card-title" style="min-height: 20vh">{{i.title}}}</h3>
+                          <h6 class="card-body" style="min-height: 20vh">{{i.description}}</h6>
+                          <p class="card-body" style="min-height: 20vh">{{i.content}}</p>
+                          
+                          <a href="{{i.url}}" class="btn btn-primary">Know More</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
